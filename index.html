@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Schedule Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Manage Schedule</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Manage Schedule</h2>
+            <form id="schedule-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required>
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+                <label for="event-time">Time:</label>
+                <input type="time" id="event-time" name="event-time" required>
+                <button type="submit">Add Schedule</button>
+            </form>
+            <div id="schedule-list">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <!-- Schedule items will be dynamically added here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Schedule Management</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
