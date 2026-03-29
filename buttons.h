@@ -1,0 +1,1 @@
+#ifndef BUTTONS_H\n#define BUTTONS_H\n\n// Button control class\nclass ButtonControl {\npublic:\n    ButtonControl(int pin); // Constructor\n    void begin();\n    void check();\n    bool isPressed();\n\private:\n    int buttonPin;\n    bool buttonState;\n};\n\n#endif // BUTTONS_H
